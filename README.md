@@ -10,7 +10,7 @@ Transform user stories into comprehensive Gherkin test cases using AI.
 
 ### Windows
 
-1. **Download** `krino-dokim-v1.3.0-beta-windows.zip` from [GitHub Releases](https://github.com/KrinoSystems/krino-dokim-releases/releases)
+1. **Download** `krino-dokim-windows.zip` from [GitHub Releases](https://github.com/KrinoSystems/krino-dokim-releases/releases)
 2. **Extract** to a folder (e.g., `C:\Program Files\KRINO`)
 3. **IMPORTANT: Unblock files** - Right-click in the extracted folder → **"Open in Terminal"**, then run:
    ```powershell
@@ -43,7 +43,7 @@ Windows SmartScreen may show: **"Windows protected your PC"**. This is normal fo
 
 ### macOS
 
-1. **Download** `krino-dokim-v1.3.0-beta-macos.zip` from [GitHub Releases](https://github.com/KrinoSystems/krino-dokim-releases/releases)
+1. **Download** `krino-dokim-macos.zip` from [GitHub Releases](https://github.com/KrinoSystems/krino-dokim-releases/releases)
 2. **Extract** and move `KRINO Dokim.app` to Applications folder
 3. **Right-click** → **Open** (first launch only, bypasses Gatekeeper)
 4. Click **Open** in the security dialog
@@ -56,10 +56,10 @@ Windows SmartScreen may show: **"Windows protected your PC"**. This is normal fo
 
 ### Linux
 
-1. **Download** `krino-dokim-v1.3.0-beta-linux.tar.gz` from [GitHub Releases](https://github.com/KrinoSystems/krino-dokim-releases/releases)
+1. **Download** `krino-dokim-linux.tar.gz` from [GitHub Releases](https://github.com/KrinoSystems/krino-dokim-releases/releases)
 2. **Extract**:
    ```bash
-   tar -xzf krino-dokim-v1.3.0-beta-linux.tar.gz
+   tar -xzf krino-dokim-linux.tar.gz
    cd krino-dokim
    ```
 3. **Make executable** (if needed):
@@ -110,7 +110,7 @@ Generate test cases for one user story:
 3. **Review & Export:**
    - View generated Gherkin scenarios
    - Edit if needed
-   - Export to Excel, Word, or Markdown
+   - Export to Excel, Word, or Markdown (native save dialog in desktop app)
 
 ---
 
@@ -144,13 +144,23 @@ Process multiple stories from Excel/CSV:
 5. **Export:**
    - Click "Export Results"
    - Choose format: 4-Sheet Excel, Word, or Markdown
-   - Download generated file
+   - Save via native OS dialog (desktop) or download (browser)
 
 **Batch Features:**
 - **Pause/Resume:** Close app anytime - reopening resumes from checkpoint
 - **Rerun Failed Stories:** Fix model settings and retry only failures
 - **Modify & Regenerate:** Edit story details and regenerate test cases
 - **Cost Tracking:** View token usage and estimated costs per story
+
+---
+
+## Keyboard Shortcuts
+
+| Shortcut | Action |
+|---|---|
+| **Escape** (double-tap) | Universal reset — clears current operation |
+| **F5** / **Ctrl+R** | Soft refresh (confirms if processing is active) |
+| **Cmd+R** (macOS) | Soft refresh |
 
 ---
 
@@ -191,7 +201,7 @@ Process multiple stories from Excel/CSV:
 1. Get API key: [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys)
 2. In KRINO: Settings → OpenAI → Enter API key → Select model
 
-**Recommended models:** `gpt-4o`, `gpt-4o-mini` (cheaper)
+**Recommended models:** `gpt-4.1`, `gpt-4.1-mini` (cheaper), `gpt-4o`
 
 ---
 
@@ -200,7 +210,7 @@ Process multiple stories from Excel/CSV:
 1. Get API key: [https://console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys)
 2. In KRINO: Settings → Anthropic → Enter API key → Select model
 
-**Recommended models:** `claude-3-5-sonnet-20241022`, `claude-3-5-haiku-20241022` (cheaper)
+**Recommended models:** `claude-sonnet-4-5`, `claude-haiku-4-5` (cheaper)
 
 ---
 
@@ -209,7 +219,7 @@ Process multiple stories from Excel/CSV:
 1. Get API key: [https://aistudio.google.com/apikey](https://aistudio.google.com/apikey)
 2. In KRINO: Settings → Google Gemini → Enter API key → Select model
 
-**Recommended models:** `gemini-2.0-flash-exp`, `gemini-1.5-pro`
+**Recommended models:** `gemini-2.5-flash`, `gemini-2.0-flash` (cheaper)
 
 ---
 
@@ -287,27 +297,20 @@ If no response, start Ollama: `ollama serve`
 
 ---
 
-## Beta Information
-
-**Expiration Date:** March 6, 2026
-
-After this date, the app will display an expiration notice. Contact [krino@krinosystems.com](mailto:krino@krinosystems.com) for upgrade options.
-
----
-
 ## Support
 
-- **GitHub Issues:** [https://github.com/KrinoSystems/krino-dokim-releases/issues](https://github.com/KrinoSystems/krino-dokim-releases/issues)
-- **Email:** [krino@krinosystems.com](mailto:krino@krinosystems.com)
+- **Email:** [support@krinosystems.com](mailto:support@krinosystems.com)
+- **Documentation:** [https://krinosystems.com/docs.html](https://krinosystems.com/docs.html)
+- **Changelog:** [https://krinosystems.com/changelog.html](https://krinosystems.com/changelog.html)
 
 ---
 
 ## License
 
-Proprietary License - Copyright 2025 TitanMind, licensed to Krino Systems LLC.
+Proprietary License - Copyright 2026 Krino Systems LLC. All rights reserved.
 
-This is beta software provided for evaluation purposes. See full license terms at: [https://github.com/KrinoSystems/krino-dokim-releases](https://github.com/KrinoSystems/krino-dokim-releases)
+See full terms at: [https://krinosystems.com/terms.html](https://krinosystems.com/terms.html)
 
 ---
 
-**KRINO Dokim v1.3.0-beta** - Professional BDD Test Case Generation
+**KRINO Dokim** — Professional BDD Test Case Generation
